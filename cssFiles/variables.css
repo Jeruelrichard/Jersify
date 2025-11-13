@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "OurFont";
+    src:url(/fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --bg-color: green;
+    --accent1: orange;
+    --accent2: blue;
+    --text-color: black;
+    --footer-color: gray;
+}
+
+.darkmode {
+    --bg-color: black;
+}
