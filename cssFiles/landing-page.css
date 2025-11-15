@@ -1,0 +1,69 @@
+
+
+header #headerLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#headerLogo h1 {
+    font-size: 4rem;
+    color: var(--accent1)
+}
+
+ header img {
+    height: 100px;
+    object-fit: contain;
+    color: orange;
+}
+
+#headerIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#headerIcons i {
+    font-size: 2rem;
+    margin-left: 20px;
+    cursor: pointer;
+    color: var(--footer-color);
+}
+
+main {
+    display: flex;
+    background: /*red*/ inherit;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card-container {
+    background: white;
+    display: flex;
+    padding: 2rem;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 15px 0 15px;
+}
+
+.card-container .card {
+    height: 22em;
+    width: 17em;
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    /*border: 1px solid black;*/
+    height: 18em;
+    width: 17em;
+    object-fit: contain;
+}
+
+.card button {
+    background: transparent;
+    font-size: 15px;
+}

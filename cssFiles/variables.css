@@ -4,11 +4,12 @@
 }
 
 :root {
-    --bg-color: green;
-    --accent1: orange;
+    --bg-color: /*green*/ white;
+    --accent1: rgb(237, 69, 0);
     --accent2: blue;
     --text-color: black;
     --footer-color: gray;
+    --hover: green;
 }
 
 .darkmode {
