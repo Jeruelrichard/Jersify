@@ -54,6 +54,20 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: jumpUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes jumpUp {
+    0%{
+        opacity: 0;
+        scale: 0.5;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .card img {
@@ -84,12 +98,13 @@ main {
     border: 1px solid var(--accent1);
     border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-/*#viewAllbtn:hover {
-    background: var(--hover);
-    color: var(--bg-color);
-}*/
+#viewAllbtn:hover {
+    /*box-shadow:0 8px 16px rgba(0,0,0,0.3);*/
+    transform:scale(1.05);
+}
 
 #dash {
   width: 100%;
@@ -143,4 +158,9 @@ main .infoSec {
     cursor: pointer;
     color: var(--text-color);
     text-decoration: none;
+}
+
+#info a:hover {
+    transform:scale(1.05);
+    transition: 150ms ease;
 }

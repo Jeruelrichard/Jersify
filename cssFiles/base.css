@@ -72,10 +72,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  text-decoration: underline;
-}
-
 form input, form textarea {
   width: 100%;
   padding: 0.5rem;
