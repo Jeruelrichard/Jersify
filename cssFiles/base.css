@@ -26,6 +26,7 @@ header {
   top: 0;
   height: 8em;
   width: inherit;
+  z-index: 10;
 }
 
 header nav ul {

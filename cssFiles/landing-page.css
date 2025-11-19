@@ -50,23 +50,30 @@ main {
 .card-container .card {
     height: 22em;
     width: 17em;
-    /*border: 1px solid black;*/
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: jumpUp linear;
+    /* use scroll-driven timeline if supported, but provide explicit
+       animation properties and will-change for smoother rendering */
+    animation-name: jumpUp;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
+    will-change: transform, opacity;
+    
 }
 
 @keyframes jumpUp {
     0%{
         opacity: 0;
-        scale: 0.5;
+        transform: scale(0.5);
     }
     100%{
         opacity: 1;
-        scale: 1;
+        transform: scale(1);
     }
 }
 
@@ -82,6 +89,11 @@ main {
     font-size: 15px;
 }
 
+.card-container a {
+    margin: 20px auto 0;
+    text-decoration: none;
+}
+
 #viewAllbtn {
     display: flex;
     justify-content: center;
@@ -91,7 +103,6 @@ main {
     /* make the button center within the flex row and horizontally centered
        when it wraps to its own line */
     margin: 20px auto 0;
-    align-self: center;
     background: white;
     color: var(--text-color);
     font-size: 16px;
@@ -102,7 +113,6 @@ main {
 }
 
 #viewAllbtn:hover {
-    /*box-shadow:0 8px 16px rgba(0,0,0,0.3);*/
     transform:scale(1.05);
 }
 
@@ -162,5 +172,4 @@ main .infoSec {
 
 #info a:hover {
     transform:scale(1.05);
-    transition: 150ms ease;
 }
