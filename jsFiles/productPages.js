@@ -178,7 +178,45 @@ const displayItem = (items)=> {
 };
 
 // show first page (id === 1) by default
-displayItem(categories.filter(i => i.id === 1));
+let currentPage = 1;
+const totalPages = 4;
+
+function flterItems(page) {
+    currentPage = page;
+    const filtered = categories.filter(item => item.id == page);
+    displayItem(filtered);
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        flterItems (currentPage - 1);
+    }
+}
+
+function nextPage () {
+    if (currentPage < totalPages) {
+        flterItems(currentPage + 1)
+    }
+}
+
+document.getElementById('btns').innerHTML =
+`<button onclick="prevPage()"><</button>
+<button onclick="flterItems(1)">1</button>
+<button onclick="flterItems(2)">2</button>
+<button onclick="flterItems(3)">3</button>
+<button onclick="flterItems(4)">4</button>
+<button onclick="nextPage()">></button>`;
+
+
+
+
+
+/*displayItem(categories.filter(i => i.id === 1));
 
 const btns = [
     {
@@ -216,3 +254,4 @@ function flterItems(a) {
     const flterCategories = categories.filter(value => value.id == a);
     displayItem(flterCategories);
 }
+*/
