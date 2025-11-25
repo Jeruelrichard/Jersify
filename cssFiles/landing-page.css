@@ -82,9 +82,18 @@ main {
     object-fit: contain;
 }
 
+.card img:hover {
+    transform: scale(1.05);
+}
+
 .card button {
     background: transparent;
     font-size: 15px;
+}
+
+.card button:hover {
+    transform:scale(1.05);
+    text-decoration: underline;
 }
 
 #btns {
