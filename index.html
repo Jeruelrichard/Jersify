@@ -10,7 +10,15 @@
     <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+
+    
+    <div id="searchBar">
+        <form class="search-container" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
+        </form><button class="close-btn" onclick="closeBtn()">x</button>
+    </div>
+    <label id="overlay" for="searchBar"></label>
+    <header id="header">
         <div id="headerLogo">
         <img src="/images/01jersifylogo.webp" alt="Jersify Logo">
         <h1>Jersify</h1>
@@ -151,6 +159,9 @@
         <p>© 2025, <a href="index.html">Jersify</a> Powered by Jeruel Richard</p>
         <a href="#">Contact Information</a>
     </footer>
+
+    <script src="/jsFiles/productPages.js"></script>
+    <script src="/jsFiles/search.js"></script>
     
 </body>
 </html>
