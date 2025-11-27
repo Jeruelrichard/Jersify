@@ -31,12 +31,16 @@ header #headerLogo {
     border: 10px solid black;
 }
 
+.searchArea {
+    display: none;
+}
+
 #searchBar {
     display: flex;
     justify-self: center;
     align-items: center;
     background: red;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 20vh;
     position: relative;
@@ -58,7 +62,7 @@ header #headerLogo {
   top: -10;
   min-width: 100vw;
   min-height: 100vh;
-  background-color: var(--box-shadow); /* Semi-transparent black overlay */ /*green*/;
+  background-color: var(--box-shadow);
   z-index: 11;
   cursor: pointer;
   overflow-y: hidden;

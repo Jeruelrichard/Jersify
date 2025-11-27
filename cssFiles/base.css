@@ -16,6 +16,11 @@ body {
   overflow-x: hidden;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 header {
   display: flex;
   justify-content: space-between;;
