@@ -15,8 +15,11 @@
     <div id="searchBar">
         <form class="search-container" id="searchForm">
             <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
+            <div id="searchSuggestions"></div>
         </form>
-        <button class="close-btn" onclick="closeSearch()"><i class="fa-solid fa-xmark fa-2x"></i></button>
+        <button class="close-btn" onclick="closeSearch()">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+        </button>
     </div>
     <label id="overlay" for="searchBar"></label>
     </div>
@@ -27,7 +30,13 @@
             <h1>Jersify</h1>
         </div>
         <div id="headerIcons">
-            <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="theme-switch">
+                <i class="fa-solid fa-moon fa-1x"></i>
+                <i class="fa-solid fa-sun fa-1x"></i>
+            </button>
+            <button onclick="openSearch()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
             <a href="#"><i class="fa-regular fa-user"></i></a>
             <a href="../htmlFiles/cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
         </div>
@@ -163,6 +172,8 @@
         <a href="#">Contact Information</a>
     </footer>
 
+    <script src="/jsFiles/script.js"></script>
+    <script src="/jsFiles/productsData.js"></script>
     <script src="/jsFiles/search.js"></script>
     
 </body>

@@ -12,12 +12,16 @@
 <body>
 
     <div class="searchArea" onclick="closeSearchOnBackdrop(event)">
-        <div id="searchBar">
-            <form class="search-container" id="searchForm">
-                <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
-            </form><button class="close-btn" onclick="closeSearch()">x</button>
-        </div>
-        <label id="overlay" for="searchBar"></label>
+    <div id="searchBar">
+        <form class="search-container" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
+            <div id="searchSuggestions"></div>
+        </form>
+        <button class="close-btn" onclick="closeSearch()">
+            <i class="fa-solid fa-xmark fa-2x"></i>
+        </button>
+    </div>
+    <label id="overlay" for="searchBar"></label>
     </div>
 
     <header>
@@ -63,7 +67,9 @@
         <a href="#">Contact Information</a>
     </footer>
 
+    <script src="/jsFiles/script.js"></script>
     <script src="/jsFiles/productPages.js"></script>
+    <script src="/jsFiles/productsData.js"></script>
     <script src="/jsFiles/search.js"></script>
     
 </body>

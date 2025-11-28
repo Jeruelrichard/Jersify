@@ -1,14 +1,13 @@
 //Opens Search form
 function openSearch() {
-  document.querySelector(".searchArea").style.display = "block";
-  document.getElementById("overlay").style.display = "block";
-document.body.classList.add("no-scroll")}
+  document.querySelector(".searchArea").classList.add("active");
+  document.body.classList.add("no-scroll");
+}
 
 //Closes Search form
 function closeSearch() {
-    document.querySelector(".searchArea").style.display="none";
-    document.getElementById("overlay").style.display= "none";
-document.body.classList.remove("no-scroll")
+    document.querySelector(".searchArea").classList.remove("active");
+    document.body.classList.remove("no-scroll");
 }
 
 //Closes Search when overlay is clicked
@@ -25,30 +24,44 @@ document.addEventListener('keydown', function (event) {
     }
 });
 
+//SEARCH FUNCTIONALITY
 
-//I need to work on all these below
-
-const searchForm = document.getElementById('searchForm');
 const searchInput = document.getElementById('searchInput');
-const cards = document.querySelectorAll('.card');
+const searchSuggestions = document.getElementById('searchSuggestions');
 
-function filterCards(query) {
-      const lowerQuery = query.toLowerCase();
-      cards.forEach(card => {
-        const text = card.textContent.toLowerCase();
-        if (text.includes(lowerQuery)) {
-          card.style.display = '';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.trim().toLowerCase();
 
-    searchInput.addEventListener('input', () => {
-filterCards(searchInput.value);
-    });
+  if (!query) {
+    searchSuggestions.style.display = 'none';
+    searchSuggestions.innerHTML = '';
+    return;
+  }
+  const matchedProducts = window.ALL_PRODUCTS.filter(product =>
+    product.title.toLowerCase().includes(query)).slice(0, 8); // Limits to top 8 suggestions
 
-searchForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      filterCards(searchInput.value);
-    });
+  if (matchedProducts.length === 0) {
+    searchSuggestions.style.display = 'none';
+    return;
+  }
+
+  searchSuggestions.innerHTML = matchedProducts.map(item => `
+    <div onclick="selectSuggestion(${item.title})">
+    ${highlight(item.title, query)}
+    </div>`).join('') /*joins everything into one big HTML string*/;
+
+    searchSuggestions.style.display = 'block';
+});
+
+function selectSuggestion(title) {
+  searchInput.value = title;
+  searchSuggestions.style.display = 'none';
+
+  //redirect to products page with search query
+  window.location.href = `/htmlFiles/allProducts.html?q=${encodeURIComponent(title)}`;
+}
+
+function highlight(text, query) {
+  const regex = new RegExp(`(${query})`, 'ig');
+  return text.replace(regex, '<strong>$1</strong>');
+}
