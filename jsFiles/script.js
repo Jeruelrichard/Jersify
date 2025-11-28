@@ -1,4 +1,4 @@
-//DARK MODE
+/*//DARK MODE
 
 let darkmode = localStorage.getItem('darkmode');
 const themeSwitch = document.getElementById('theme-switch');
@@ -17,4 +17,4 @@ themeSwitch.addEventListener("click", () => {
 const disableDarkmode =() => {
     document.body.classList.remove('darkmode')
     localStorage.setItem('darkmode', null)
-}
+}*/

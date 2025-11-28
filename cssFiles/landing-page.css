@@ -35,7 +35,7 @@ header #headerLogo {
     background: transparent;
 }
 
-#theme-switch {
+/*#theme-switch {
   height: 50px;
   width: 50px;
   padding: 0;
@@ -57,7 +57,7 @@ header #headerLogo {
 
 .darkmode #theme-switch i:last-child {
   display: block;
-}
+}*/
 
 .searchArea {
     position: fixed;
@@ -117,6 +117,24 @@ header #headerLogo {
     padding: 12px 16px;
     cursor: pointer;
 }
+#searchSuggestions > div {
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background 150ms ease, color 150ms ease;
+}
+
+#searchSuggestions > div:hover {
+    background: var(--accent2);
+    color: var(--bg-color);
+}
+
+#searchSuggestions strong {
+    font-weight: 700;
+    color: inherit;
+}
 
 
 #overlay {
@@ -154,7 +172,7 @@ main {
 }
 
 .card-container {
-    background: white;
+    background: var(--bg-color);
     display: flex;
     padding: 2rem;
     gap: 30px;
@@ -170,8 +188,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* use scroll-driven timeline if supported, but provide explicit
-       animation properties and will-change for smoother rendering */
     animation-name: jumpUp;
     animation-duration: 300ms;
     animation-timing-function: linear;
@@ -194,7 +210,6 @@ main {
 }
 
 .card img {
-    /*border: 1px solid black;*/
     height: 18em;
     width: 17em;
     object-fit: contain;
@@ -248,7 +263,7 @@ main {
     /* make the button center within the flex row and horizontally centered
        when it wraps to its own line */
     margin: 20px auto 0;
-    background: white;
+    background: var(--bg-color);
     color: var(--text-color);
     font-size: 16px;
     border: 1px solid var(--accent1);
@@ -311,8 +326,14 @@ main .infoSec {
     color: var(--footer-color);
 }
 
+#infolinks {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5px;
+}
 
-#info a {
+#infolinks a {
     cursor: pointer;
     color: var(--text-color);
     text-decoration: none;

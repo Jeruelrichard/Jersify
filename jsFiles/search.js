@@ -46,7 +46,7 @@ searchInput.addEventListener("input", () => {
   }
 
   searchSuggestions.innerHTML = matchedProducts.map(item => `
-    <div onclick="selectSuggestion(${item.title})">
+    <div onclick="selectSuggestion('${item.title}')">
     ${highlight(item.title, query)}
     </div>`).join('') /*joins everything into one big HTML string*/;
 

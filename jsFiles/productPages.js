@@ -363,6 +363,7 @@ const displayItem = (items)=> {
     }).join("") /*joins everything into one big HTML string*/;
 };
 
+//The below is the search functionality on the products page
 const params = new URLSearchParams(window.location.search);
 const searchQuery = params.get('q');
 

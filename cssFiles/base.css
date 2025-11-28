@@ -58,7 +58,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   bottom: 0;
-  background: white;
+  background: var(--bg-color);
   color: var(--footer-color);
   text-align: center;
   width: 100%;

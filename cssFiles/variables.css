@@ -15,5 +15,10 @@
 
 .darkmode {
     --bg-color: black;
+    --accent1: rgb(237, 69, 0);
+    --accent2: blue;
+    --text-color: white;
+    --footer-color: silver;
+    --hover: lightgreen;
     --box-shadow: rgba(255, 255, 255, 0.25);
 }
