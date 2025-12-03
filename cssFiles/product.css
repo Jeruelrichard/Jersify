@@ -1,0 +1,64 @@
+#productsDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /*padding: 2rem;*/
+    width: 100%;
+    /*border: 1px solid yellow;*/
+}
+
+#productsDetail img {
+    height: 45em;
+    width: 50%;
+    object-fit: cover;
+    /*border: 1px solid red;*/
+}
+
+#productsDetail .details {
+    /*border: 1px solid red;*/
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details h1 {
+    font-size: 3em;
+    color: var(--text-color);
+}
+
+.details p {
+    font-size: 20px;
+}
+
+.details h3 {
+    font-size: 1.5em;
+    color: green;
+}
+
+.details label {
+    font-size: 15px;
+}
+
+.details #sex, #qty{
+    font-size: 20px;
+    width: 70%;
+}
+
+.details button{
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    border: 1px solid var(--accent1);
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.details button:hover {
+    background: var(--accent1);
+    color: var(--bg-color);
+}
