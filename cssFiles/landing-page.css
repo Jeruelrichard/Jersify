@@ -219,6 +219,10 @@ main {
     transform: scale(1.05);
 }
 
+.card h3 {
+    color: var(--text-color);
+}
+
 .card button {
     background: transparent;
     font-size: 15px;

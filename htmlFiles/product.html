@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Shopping Cart</title>
+    <title>Product</title>
     <link rel="stylesheet" href="/cssFiles/variables.css">
     <link rel="stylesheet" href="/cssFiles/base.css">
     <link rel="stylesheet" href="/cssFiles/landing-page.css">
@@ -26,19 +26,21 @@
 
     <header>
         <div id="headerLogo">
-        <img src="../images/01jersifylogo.webp" alt="Jersify Logo">
-        <h1>Jersify</h1>
+            <img src="../images/01jersifylogo.webp" alt="Jersify Logo">
+            <h1>Jersify</h1>
         </div>
         <div id="headerIcons">
-        <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <a href="#"><i class="fa-regular fa-user"></i></a>
-        <a href="../htmlFiles/cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+            <a href="../htmlFiles/cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
         </div>
     </header>
 
     <main>
+        <div id="productsDetail"></div>
 
         <div id="dash"></div>
+
         <section class="infoSec">
             <div id="info">
                 <div id="infoLogo">
@@ -67,6 +69,7 @@
 
     <script src="/jsFiles/script.js"></script>
     <script src="/jsFiles/productsData.js"></script>
+    <script src="/jsFiles/productsDetail.js"></script>
     <script src="/jsFiles/search.js"></script>
     
 </body>
