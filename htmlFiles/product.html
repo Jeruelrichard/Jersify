@@ -18,6 +18,7 @@
             <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
             <div id="searchSuggestions"></div>
         </form>
+        <button class="clearSearch" onclick="clearSearch()">Clear</button>
         <button class="close-btn" onclick="closeSearch()">
             <i class="fa-solid fa-xmark fa-2x"></i>
         </button>
@@ -39,6 +40,7 @@
 
     <main>
         <div id="productsDetail"></div>
+        <section id="relatedProducts"></section>
 
         <div id="dash"></div>
 
@@ -71,6 +73,7 @@
     <script src="/jsFiles/script.js"></script>
     <script src="/jsFiles/productsData.js"></script>
     <script src="/jsFiles/productsDetail.js"></script>
+    <script src="/jsFiles/productPages.js"></script>
     <script src="/jsFiles/search.js"></script>
     
 </body>

@@ -57,11 +57,26 @@ function selectSuggestion(title) {
   searchInput.value = title;
   searchSuggestions.style.display = 'none';
 
-  //redirect to products page with search query
-  window.location.href = `/htmlFiles/allProducts.html?q=${encodeURIComponent(title)}`;
+  // find the product by title to get its pid
+  const product = window.ALL_PRODUCTS.find(p => p.title === title);
+  
+  if (product) {
+    // redirect to individual product page
+    window.location.href = `/htmlFiles/product.html?pid=${product.pid}`;
+  } else {
+    // fallback: redirect to search results if product not found
+    window.location.href = `htmlFiles/allProducts.html?q=${encodeURIComponent(title)}`;
+  }
 }
 
 function highlight(text, query) {
   const regex = new RegExp(`(${query})`, 'ig');
   return text.replace(regex, '<strong>$1</strong>');
+}
+
+//CLEAN SEARCH FUNCTION
+function clearSearch() {
+    searchInput.value = '';
+    searchSuggestions.innerHTML = '';
+    searchSuggestions.style.display = 'none';
 }

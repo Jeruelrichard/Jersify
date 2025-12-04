@@ -7,19 +7,29 @@
     <link rel="stylesheet" href="/cssFiles/variables.css">
     <link rel="stylesheet" href="/cssFiles/base.css">
     <link rel="stylesheet" href="/cssFiles/landing-page.css">
+    <link rel="stylesheet" href="/cssFiles/allProducts.css">
     <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class="searchArea" onclick="closeSearchOnBackdrop(event)">
     <div id="searchBar">
-        <form class="search-container" id="searchForm">
+        <div id="testing"><form class="search-container" id="searchForm">
             <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
             <div id="searchSuggestions"></div>
         </form>
+        <button class="clearSearch" onclick="clearSearch()">Clear</button>
         <button class="close-btn" onclick="closeSearch()">
             <i class="fa-solid fa-xmark fa-2x"></i>
-        </button>
+        </button></div>
+
+        <div class="filterDiv">
+            <h3>Filter:</h3>
+            <button class="filter-btn" data-filter="Club">Clubs</button>
+            <button class="filter-btn" data-filter="National">National Teams</button>
+            <button class="filter-btn" data-filter="Player">Players</button>
+        </div>
+
     </div>
     <label id="overlay" for="searchBar"></label>
     </div>

@@ -1,0 +1,66 @@
+#searchBar {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background: var(--bg-color);
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    top: 0;
+    animation: slideDown 400ms ease-out forwards;
+    z-index: 101; /* keep search bar above the overlay */
+}
+
+#searchBar #testing {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.filterDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-self: flex-start;
+    margin-left: 80px;
+    gap: 30px;
+}
+
+.filterDiv h3 {
+    font-size: 20px;
+    color: var(--accent1);
+}
+
+.filterDiv button {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent1);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.filterDiv button:hover {
+    background: var(--accent1);
+    color: var(--bg-color);
+}
+
+#searchSuggestions {
+    position: absolute;
+    top: 44%;
+    left: 40.9%;
+    transform: translateX(-50%);
+    width: 70%;
+    background: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 102; /* ensure suggestions render above the overlay */
+    display: none;
+    padding: 12px 16px;
+    cursor: pointer;
+}

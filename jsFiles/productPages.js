@@ -68,3 +68,40 @@ document.getElementById('btns').innerHTML =
 
 // render the first page immediately so the page shows products on load
 flterItems(currentPage);
+
+// FILTER BUTTONS FUNCTIONALITY
+const filterButtons = document.querySelectorAll('.filter-btn');
+let activeFilter = null; // track which filter is active
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filterType = button.dataset.filter;
+        
+        // toggle filter (click again to clear)
+        if (activeFilter === filterType) {
+            activeFilter = null;
+            button.style.background = 'var(--bg-color)';
+            button.style.color = 'var(--text-color)';
+        } else {
+            // deactivate previous filter button
+            filterButtons.forEach(btn => {
+                btn.style.background = 'var(--bg-color)';
+                btn.style.color = 'var(--text-color)';
+            });
+            
+            activeFilter = filterType;
+            button.style.background = 'var(--accent1)';
+            button.style.color = 'var(--bg-color)';
+        }
+        
+        // filter and display products
+        let filtered = window.ALL_PRODUCTS;
+        
+        if (activeFilter) {
+            filtered = filtered.filter(item => item.type === activeFilter);
+        }
+        
+        displayItem(filtered);
+        currentPage = 1; // reset to page 1 when filtering
+    });
+});
