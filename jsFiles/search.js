@@ -80,3 +80,5 @@ function clearSearch() {
     searchSuggestions.innerHTML = '';
     searchSuggestions.style.display = 'none';
 }
+
+//I NEED TO ADD KEYBOARD FUNCTIONALITY TO THIS. WILL COME BACK AND DO SO WHEN I'VE LEARNED MUCH BETTER

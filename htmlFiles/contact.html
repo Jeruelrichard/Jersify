@@ -3,60 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Contact Information</title>
     <link rel="stylesheet" href="/cssFiles/variables.css">
     <link rel="stylesheet" href="/cssFiles/base.css">
     <link rel="stylesheet" href="/cssFiles/landing-page.css">
-    <link rel="stylesheet" href="/cssFiles/allProducts.css">
     <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class="searchArea" onclick="closeSearchOnBackdrop(event)">
     <div id="searchBar">
-        <div id="testing"><form class="search-container" id="searchForm">
+        <form class="search-container" id="searchForm">
             <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
             <div id="searchSuggestions"></div>
         </form>
         <button class="clearSearch" onclick="clearSearch()">Clear</button>
         <button class="close-btn" onclick="closeSearch()">
             <i class="fa-solid fa-xmark fa-2x"></i>
-        </button></div>
-
-        <div class="filterDiv">
-            <h3>Filter:</h3>
-            <button class="filter-btn" data-filter="Club">Clubs</button>
-            <button class="filter-btn" data-filter="National">National Teams</button>
-            <button class="filter-btn" data-filter="Player">Players</button>
-        </div>
-
+        </button>
     </div>
     <label id="overlay" for="searchBar"></label>
     </div>
 
-    <header>
+    <header id="header">
         <div id="headerLogo">
-            <img src="../images/01jersifylogo.webp" alt="Jersify Logo">
+            <img src="/images/01jersifylogo.webp" alt="Jersify Logo">
             <h1>Jersify</h1>
         </div>
         <div id="headerIcons">
-            <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <!--<button id="theme-switch">
+                <i class="fa-solid fa-moon fa-1x"></i>
+                <i class="fa-solid fa-sun fa-1x"></i>
+            </button>-->
+            <button onclick="openSearch()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
             <a href="#"><i class="fa-regular fa-user"></i></a>
             <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
         </div>
     </header>
 
     <main>
-        <h2>Products</h2>
-        <div class="card-container"></div>
-        <div id="btns"></div>
+        <div class="contactInfo">
+            <h2>You can contact us for our services via:</h2><br><br>
+            <p><strong>Email: </strong>okemdinach383@gmail.com</p><br>
+            <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/jeruel-richard-444710292?utm_campaign=share_via&utm_content=profile">https://www.linkedin.com/in/jeruel-richard-444710292?utm_campaign=share_via&utm_content=profile</a></p><br>
+            <p><strong>X: </strong><a href="https://x.com/JeruelRichard">https://x.com/JeruelRichard</a></p>
+
+            <style>
+                .contactInfo {
+                    display: grid;
+                    justify-content: center;
+                }
+
+                .contactInfo a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+        </div>
+        
 
         <div id="dash"></div>
+
 
         <section class="infoSec">
             <div id="info">
                 <div id="infoLogo">
-                    <img src="../images/01jersifylogo.webp" alt="Jersify Logo">
+                    <img src="/images/01jersifylogo.webp" alt="Jersify Logo">
                     <h1>Jersify</h1>
                 </div><br><br>
                 <p>Our goal is to help you become your favourite club's no. 1 fan.</p>
@@ -81,7 +94,6 @@
 
     <script src="/jsFiles/script.js"></script>
     <script src="/jsFiles/productsData.js"></script>
-    <script src="/jsFiles/productPages.js"></script>
     <script src="/jsFiles/search.js"></script>
     
 </body>

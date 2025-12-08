@@ -1,0 +1,35 @@
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px;
+    border: 1px solid green;
+}
+
+.cartContainer h1 {
+    font-size: 3em;
+}
+
+.cartContainer button {
+    background: var(--accent2);
+    color: var(--accent1);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2em;
+}
+.cartContainer h3 {
+    font-size: 25px;
+}
+
+.cartContainer p {
+    font-size: 18px;
+}
+
+.cartContainer a{
+    color: var(--accent1)
+}
+
+.cartContainer a:hover {
+    text-decoration: underline;
+}

@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="/cssFiles/variables.css">
     <link rel="stylesheet" href="/cssFiles/base.css">
     <link rel="stylesheet" href="/cssFiles/landing-page.css">
+    <link rel="stylesheet" href="/cssFiles/cart.css">
     <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div class="searchArea" onclick="closeSearchOnBackdrop(event)">
-    <div id="searchBar">
-        <form class="search-container" id="searchForm">
-            <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
-            <div id="searchSuggestions"></div>
-        </form>
-        <button class="clearSearch" onclick="clearSearch()">Clear</button>
-        <button class="close-btn" onclick="closeSearch()">
-            <i class="fa-solid fa-xmark fa-2x"></i>
-        </button>
-    </div>
-    <label id="overlay" for="searchBar"></label>
+        <div id="searchBar">
+            <form class="search-container" id="searchForm">
+                <input type="text" id="searchInput" placeholder="Browse Jersify" autocomplete="off">
+                <div id="searchSuggestions"></div>
+            </form>
+            <button class="clearSearch" onclick="clearSearch()">Clear</button>
+            <button class="close-btn" onclick="closeSearch()">
+                <i class="fa-solid fa-xmark fa-2x"></i>
+            </button>
+        </div>
+        <label id="overlay" for="searchBar"></label>
     </div>
 
     <header>
@@ -33,11 +34,12 @@
         <div id="headerIcons">
         <button onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
         <a href="#"><i class="fa-regular fa-user"></i></a>
-        <a href="../htmlFiles/cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
         </div>
     </header>
 
     <main>
+        <div class="cartContainer"></div>
 
         <div id="dash"></div>
         <section class="infoSec">
@@ -49,9 +51,9 @@
                 <p>Our goal is to help you become your favourite club's no. 1 fan.</p>
                 <h3>#WearYourColors</h3>
                 <div id="infolinks">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://x.com/JeruelRichard"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/JeruelRichard"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
 
@@ -62,13 +64,14 @@
     </main>
 
     <footer>
-        <p>© 2025, <a href="index.html">Jersify</a> Powered by Jeruel Richard</p>
-        <a href="#">Contact Information</a>
+        <p>© 2025, <a href="../index.html">Jersify</a> Powered by Jeruel Richard</p>
+        <a href="contact.html">Contact Information</a>
     </footer>
 
     <script src="/jsFiles/script.js"></script>
     <script src="/jsFiles/productsData.js"></script>
     <script src="/jsFiles/search.js"></script>
+    <script src="/jsFiles/cart.js"></script>
     
 </body>
 </html>
