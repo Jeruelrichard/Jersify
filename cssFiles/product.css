@@ -63,6 +63,24 @@
     color: var(--bg-color);
 }
 
+#addedCard {
+    display: flex;
+    flex-direction: column;
+    background: red;
+    border: 1px solid green;
+}
+
+#addedCardDetails {
+    display: flex;
+    flex-direction: row;
+}
+
+#addedCard img {
+    object-fit: cover;
+    height: 120px;
+    width: 120px;
+}
+
 #relatedProducts {
     margin-top: 50px;
 }

@@ -18,6 +18,13 @@
     padding: 10px;
     font-size: 2em;
 }
+
+.cartContainer button:hover {
+    transform: scale(1.05);
+    background: var(--accent1);
+    color: var(--accent2)
+}
+
 .cartContainer h3 {
     font-size: 25px;
 }

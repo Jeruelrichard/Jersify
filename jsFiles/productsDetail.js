@@ -21,7 +21,7 @@ container.innerHTML = `
 <p>${products.description}</p>
 <h3>N${products.price}.00 NGN</h3>
 
-<label>Sex</label>
+<label class="sex">Sex</label>
 <select name="sex" id="sex">
 <option value="" disabled selected>M</option>
 <option value="male">M</option>
@@ -77,7 +77,7 @@ ${relatedHTML}
 
 //SIMPLE CART LOGIC (could be removed...)
 function addToCart() {
-    const qty = parseInt(document.getElementById("gty").value);
+    const qty = parseInt(document.getElementById("qty").value);
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -90,5 +90,17 @@ function addToCart() {
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
-    alert("Added To Cart!")
+    /*alert("Added To Cart!")*/
+
+    document.querySelector(".details").innerHTML = `
+    <div id="addedCard">
+    <div id="addedCardDetails">
+    <img src="${products.image}" alt="${products.title}">
+    <h4>${products.title}</h4>
+    </div>
+
+    <button>View Cart</button>
+    <button id="checkout">Checkout</button>
+    <a href="allProducts.html">Continue Shopping</a>
+    </div>`
 }
