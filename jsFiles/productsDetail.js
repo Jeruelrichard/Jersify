@@ -94,9 +94,13 @@ function addToCart() {
 
     document.querySelector(".details").innerHTML = `
     <div id="addedCard">
+    <h5>Item addded to cart</h5>
     <div id="addedCardDetails">
     <img src="${products.image}" alt="${products.title}">
+    <span id='deets'>
     <h4>${products.title}</h4>
+    <p>Sex: </p>
+    </span>
     </div>
 
     <button>View Cart</button>

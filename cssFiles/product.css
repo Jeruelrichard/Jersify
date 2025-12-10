@@ -66,19 +66,47 @@
 #addedCard {
     display: flex;
     flex-direction: column;
-    background: red;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 320px;
     border: 1px solid green;
 }
 
 #addedCardDetails {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 #addedCard img {
     object-fit: cover;
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
+}
+
+#addedCard p {
+    font-size: 16px;
+}
+
+#addedCard #checkout {
+    background: var(--accent2);
+    color: var(--accent1);
+    border: none;
+}
+
+#addedCard #checkout:hover {
+    background: var(--accent1);
+    color: var(--accent2);
+}
+
+#addedCard a {
+    margin-top: 10px;
+    color: var(--accent1);
+}
+
+#addedCard a:hover {
+    text-decoration: underline;
 }
 
 #relatedProducts {
