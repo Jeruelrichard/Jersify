@@ -32,7 +32,12 @@ container.innerHTML = `
 <input type="number" min="1" value="1" id="qty">
 
 <button onclick="addToCart('${products.pid}')">Add To Cart</button>
+<button onclick="buyNow()" id="buyNow">Buy It Now</button>
 </div>`;
+
+function buyNow() {
+    alert("Your order has been sent!");
+}
 
 
 //FOR RELATED PRODUCTS
@@ -75,9 +80,13 @@ ${relatedHTML}
 
 
 
-//SIMPLE CART LOGIC (could be removed...)
+// This stores the original details for restoration later
+const originalDetailsHTML = document.querySelector(".details").innerHTML;
+
+//SIMPLE CART LOGIC
 function addToCart() {
     const qty = parseInt(document.getElementById("qty").value);
+    const sex = document.getElementById("sex").value || "Male";
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -86,25 +95,43 @@ function addToCart() {
     if (existing) {
         existing.qty += qty;
     } else {
-        cart.push({pid, qty});
+        cart.push({pid, qty, sex});
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
-    /*alert("Added To Cart!")*/
 
     document.querySelector(".details").innerHTML = `
     <div id="addedCard">
-    <h5>Item addded to cart</h5>
-    <div id="addedCardDetails">
-    <img src="${products.image}" alt="${products.title}">
-    <span id='deets'>
-    <h4>${products.title}</h4>
-    <p>Sex: </p>
-    </span>
-    </div>
+        <h5>✔️Item addded to cart</h5>
+        <div id="addedCardDetails">
+            <img src="${products.image}" alt="${products.title}">
+            <span id='deets'>
+                <h4>${products.title}</h4>
+                <p>Sex: ${sex === "male" ? "Male" : sex === "female" ? "Female" : sex}</p>
+                <p>Quantity: ${qty}</p>
+            </span>
+        </div>
 
-    <button>View Cart</button>
-    <button id="checkout">Checkout</button>
-    <a href="allProducts.html">Continue Shopping</a>
+        <button>View Cart</button>
+        <button id="checkout">Checkout</button>
+        <a href="allProducts.html">Continue Shopping</a>
+        <p id="countdown" style="text-align: center; margin-top: 10px; font-weight: bold; color: var(--text-color);">Closing in 3...</p>
     </div>`
+
+    let countdownValue = 3;
+    const countdownEl = document.getElementById("countdown");
+    
+    const countdownInterval = setInterval(() => {
+        countdownValue--;
+        if (countdownValue > 0) {
+            countdownEl.textContent = `Closing in ${countdownValue}...`;
+        } else {
+            clearInterval(countdownInterval);
+            removeAddedCard();
+        }
+    }, 1000);
+
+    function removeAddedCard() {
+        document.querySelector(".details").innerHTML = originalDetailsHTML;
+    }
 }

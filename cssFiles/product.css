@@ -63,6 +63,17 @@
     color: var(--bg-color);
 }
 
+#buyNow {
+    background: var(--accent2);
+    color: var(--accent1);
+    border: none;
+}
+
+#buyNow:hover {
+    background: var(--accent1);
+    color: var(--accent2);
+}
+
 #addedCard {
     display: flex;
     flex-direction: column;
@@ -70,7 +81,13 @@
     align-items: center;
     height: 320px;
     width: 320px;
-    border: 1px solid green;
+    border: 1px solid black;
+}
+
+#addedCard h5 {
+    align-self: flex-start;
+    margin: 10px;
+    font-size: 15px;
 }
 
 #addedCardDetails {

@@ -40,3 +40,40 @@
 .cartContainer a:hover {
     text-decoration: underline;
 }
+
+.cartItemCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    width: 100%;
+}
+
+#dash {
+  width: 100%;
+  height: 1px;
+  align-self: center;
+  margin-bottom: 20px;
+  border: 1px solid var(--footer-color);
+}
+
+.cartItemCard #main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#cartItemDeets {
+    display: flex;
+    flex-direction: row;
+}
+
+#cartItemDeets p {
+    font-size: 16px;
+}
+
+.cartItemCard img {
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+}
