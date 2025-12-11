@@ -106,6 +106,10 @@
     font-size: 16px;
 }
 
+#addedCard #viewCart {
+    width: 220px;
+}
+
 #addedCard #checkout {
     background: var(--accent2);
     color: var(--accent1);

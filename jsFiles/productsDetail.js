@@ -112,7 +112,7 @@ function addToCart() {
             </span>
         </div>
 
-        <button>View Cart</button>
+        <a href="cart.html"><button id="viewCart">View Cart</button></a>
         <button id="checkout">Checkout</button>
         <a href="allProducts.html">Continue Shopping</a>
         <p id="countdown" style="text-align: center; margin-top: 10px; font-weight: bold; color: var(--text-color);">Closing in 3...</p>
