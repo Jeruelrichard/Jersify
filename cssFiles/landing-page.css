@@ -358,3 +358,33 @@ main .infoSec {
 #info a:hover {
     transform:scale(1.05);
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    #headerLogo h1 {
+        font-size: 2rem;
+    }
+
+    #headerLogo img {
+        height: 50px;
+    }
+
+    #headerIcons i {
+        font-size: 1.5rem;
+    }
+
+    #searchSuggestions {
+        left: 36.6%;
+    }
+
+    #infoLogo h1{
+        font-size: 3rem
+    }
+
+    #infoLogo img {
+        height: 75px;
+    }
+
+    #info p {
+        font-size: 20px;
+    }
+}
