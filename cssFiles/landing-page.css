@@ -376,6 +376,42 @@ main .infoSec {
         left: 36.6%;
     }
 
+    .card-container {
+        padding: 0;
+        margin: 0;
+        gap: 5px;
+    }
+
+    .card-container .card {
+        height: 11em;
+        width: 9em;
+    }
+
+    .card img {
+        height: 9em;
+        width: 8em;
+    }
+
+    .card h3 {
+        font-size: 10px;
+    }
+
+    #btns {
+        margin-top: 30px;
+    }
+
+    .fil-p {
+        font-size: 14px;
+    }
+
+    #viewAllbtn {
+        width: 100px;
+    }
+
+    main .infoSec {
+        margin: 0;
+    }
+
     #infoLogo h1{
         font-size: 3rem
     }

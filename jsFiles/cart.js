@@ -27,7 +27,8 @@ container.innerHTML =`
             <div id="dash"></div>
             <div id="main">
                 <div id="cartItemDeets">
-                    <img src="${product.image}" alt="${product.title}">
+                <a href="product.html?pid=${item.pid}" class="product-link">
+                    <img src="${product.image}" alt="${product.title}"></a>
                     <span id="deets">
                         <h3>${product.title}</h3>
                         <p>N${product.price}.00</p>

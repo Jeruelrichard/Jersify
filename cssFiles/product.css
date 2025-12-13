@@ -2,9 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /*padding: 2rem;*/
     width: 100%;
-    /*border: 1px solid yellow;*/
 }
 
 #productsDetail img {
@@ -132,4 +130,69 @@
 
 #relatedProducts {
     margin-top: 50px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    main {
+        padding: 0;
+    }
+
+    #productsDetail {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #productsDetail img {
+        width: 100%;
+        height: 25em;
+    }
+
+    #productsDetail .details {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .details h1 {
+        font-size: 2em;
+    }
+
+    .details p {
+        font-size: 15px;
+    }
+
+    .details h3 {
+        font-size: 1em;
+    }
+
+    .details label {
+        font-size: 18px;
+    }
+
+    .details #sex, #qty {
+        width: 100%;
+    }
+
+    .details button {
+        align-self: center;
+        width: 100%;
+    }
+
+    #addedCard {
+        min-height: 100px;
+        min-width: 100px;
+    }
+
+    #addedCard img {
+        height: 90px;
+        width: 90px;
+    }
+
+    #addedCardDetails {
+        margin: 0;
+        gap: 10px;
+    }
+
+    #addedCard #checkout {
+        width: 220px;
+    }
 }
