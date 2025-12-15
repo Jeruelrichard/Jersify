@@ -53,6 +53,7 @@ container.innerHTML =`
     <h1>Your Cart</h1>
     ${cartItemsHTML}
     <div id="estimatedTotal">
+    <div id="esTotalDash"></div>
         <h3>Estimated Total: <span>N${total}.00</span></h3>
     </div>
     <button id="finalCheck" onclick="buyNow()">Checkout</button>
