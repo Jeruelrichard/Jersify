@@ -178,6 +178,9 @@
 
     #cartItemQty {
         gap: 10px;
+        width: 100%;
+        justify-content: right;
+        margin-top: 10px;
     }
 
     #cartItemQty p, i {
@@ -185,7 +188,8 @@
     }
 
     #cartItemPrice {
-        text-align: center;
+        text-align: right;
+        width: 100%;
     }
 
     #estimatedTotal {

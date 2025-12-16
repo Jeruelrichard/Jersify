@@ -414,7 +414,7 @@ const ALL_PRODUCTS = [
     {
         id: 3,
         image: "../images/Hazard-Chelsea-jersey.webp",
-        title: "Hazard Chelsea Home Jersey",
+        title: "Hazard Chelsea Home",
         price: 5500,
         pid: "hazard-che-home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
