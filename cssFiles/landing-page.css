@@ -426,5 +426,11 @@ main .infoSec {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    #searchSuggestions {
+        left: 39.7%;
+    }
     
+    main .infoSec {
+        margin: 0;
+    }
 }
