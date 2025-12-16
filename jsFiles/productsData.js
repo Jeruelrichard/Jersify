@@ -14,7 +14,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/PSG-Home-2025-26.webp",
-        title: "PSG 2025/26 Home Jersey",
+        title: "PSG Home 2025/26",
         price: 55000,
         pid: "psg-25-26-home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -24,7 +24,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/FCB-2020-21-away.webp",
-        title: "Barcelona Away Jersey 2020/21",
+        title: "Barcelona Away 2020/21",
         price: 15000,
         pid: "bar-20-21-away",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -54,7 +54,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/Madrid-2025-26-home.webp",
-        title: "Madrid 2025/26 Home Jersey",
+        title: "Madrid 2025/26 Home",
         price: 35000,
         pid: "rma-25-26-home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -64,7 +64,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/Manchester-United-Home-2025-26.webp",
-        title: "United 2025/26 Home Jersey",
+        title: "United 2025/26 Home",
         price: 25000,
         pid: "mun-25-26-home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -74,7 +74,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/Liverpool-FC-Away-2025-26.webp",
-        title: "Liverpool 2025/26 Away Jersey",
+        title: "Liverpool 2025/26 Away",
         price: 30000,
         pid: "lfc-25-26-away",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -94,7 +94,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/Nigeria-2020-Stadium-Away.webp",
-        title: "Nigeria 2020 Away Jersey",
+        title: "Nigeria 2020 Away",
         price: 7000,
         pid: "nigeria-20-away",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -104,7 +104,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/AlNassr-25-26-home.webp",
-        title: "Al Nassr 2025/26 Home Jersey",
+        title: "Al Nassr 2025/26 Home",
         price: 9000,
         pid: "alnassr-25-26-home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -124,7 +124,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/Barcelona-Third-Shirt-2021-2022.webp",
-        title: "Barcelona 3rd Jersey 2021/2022",
+        title: "Barcelona 3rd 2021/2022",
         price: 20000,
         pid: "bar-20-21-third",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -134,7 +134,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/Chelsea-FC-Home-2024-25.webp",
-        title: "Chelsea 2024/25 Home Jersey",
+        title: "Chelsea 2024/25 Home",
         price: 35000,
         pid: "che-24-25-home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -154,7 +154,7 @@ const ALL_PRODUCTS = [
     {
         id: 1,
         image: "../images/Argentina-2026.webp",
-        title: "Argentina 2026 WC Jersey",
+        title: "Argentina 2026 WC",
         price: 46000,
         pid: "arg-26-wc",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
@@ -334,7 +334,7 @@ const ALL_PRODUCTS = [
     {
         id: 3,
         image: "../images/Mbappe-Madrid-Home-jersey.webp",
-        title: "Mbappe Madrid Debut Jersey",
+        title: "Mbappe Madrid Debut",
         price: 30000,
         pid: "mbappe-rma-debut",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, praesentium accusantium exercitationem nostrum commodi soluta autem obcaecati ut esse culpa placeat eos, in vero beatae numquam itaque delectus nihil dolores!",
