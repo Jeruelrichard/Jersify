@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jersify | No.1 Jersey Shop</title>
+    <link rel="stylesheet" href="/cssFiles/variables.css">
+    <link rel="stylesheet" href="/cssFiles/base.css">
+    <link rel="stylesheet" href="/cssFiles/landing-page.css">
+    <script src="https://kit.fontawesome.com/29e169970c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="headerLogo">
+            <img src="/images/01jersifylogo.webp" alt="Jersify Logo">
+            <h1>Jersify</h1>
+        </div>
+        <div id="headerIcons">
+            <!--<button id="theme-switch">
+                <i class="fa-solid fa-moon fa-1x"></i>
+                <i class="fa-solid fa-sun fa-1x"></i>
+            </button>-->
+            <button onclick="openSearch()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a href="../htmlFiles/user.html"><i class="fa-regular fa-user"></i></a>
+            <a href="../htmlFiles/cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <div id="auth-container">
+            <button id="google-signin-btn">Sign in with Google
+            </button>
+            <button id="signout-btn" style="display:none;">Sign Out</button>
+            <div id="user-info" style="display:none;"></div>
+        </div>
+    </main>
+
+    <script type="module" src="/jsFiles/user.js"></script>
+</body>

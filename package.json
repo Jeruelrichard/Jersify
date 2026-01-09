@@ -1,0 +1,29 @@
+{
+  "name": "jersify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeruelrichard/Jersify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeruelrichard/Jersify/issues"
+  },
+  "homepage": "https://github.com/Jeruelrichard/Jersify#readme",
+  "dependencies": {
+    "firebase": "^11.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
+
