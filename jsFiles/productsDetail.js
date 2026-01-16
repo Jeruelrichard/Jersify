@@ -41,7 +41,7 @@ function buyNow() {
 
 
 //FOR RELATED PRODUCTS
-const relatedProducts = window.ALL_PRODUCTS.filter(p => 
+let relatedProducts = window.ALL_PRODUCTS.filter(p => 
     p.team === products.team && p.pid !== products.pid).sort((a,b) => {
         let scoreA = 0;
         let scoreB = 0;
