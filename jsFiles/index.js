@@ -31,6 +31,9 @@ if (searchQuery) {
     displayItem(searchResults);
 }
 
+//PAGINATION FUNCTIONALITY
+// show first page (id === 1) by default
+
 let currentPage = 1;
 const totalPages = 4;
 
